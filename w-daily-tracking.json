@@ -1,0 +1,20 @@
+[
+  {
+    "tracking-label": "Daily Health Report",
+    "metric-type": "health",
+    "date": "2024-10-21",
+    "time-of-day": "evening",
+    "avg-heart-rate": 150,
+    "notes": "This is a note from this report",
+    "body-factors": "6 hrs of sleep",
+    "hours-of-sleep": "7.5",
+    "pti-mental-strength": 8,
+    "pti-daily-mood": 3.5,
+    "hydration": 40,
+    "weather-conditions": "rainy + cloudy",
+    "tdee": 1900,
+    "tdee-target": 2500,
+    "tdee-average": 2150,
+    "weight": 145
+  }
+]
