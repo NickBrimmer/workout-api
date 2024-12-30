@@ -1,0 +1,8 @@
+{
+  "exec": "node --watch ./server/server.js",
+  "watch": ["server/**/**.js"],
+  "ext": "js,json",
+  "ignore": ["node_modules/**"],
+  "signal": "SIGHUP",
+  "legacyWatch": true
+}
