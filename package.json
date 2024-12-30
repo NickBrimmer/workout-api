@@ -1,7 +1,7 @@
 {
   "name": "workout-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "docker compose up --build; docker compose down",
     "nuke": "docker rm --force $(docker ps -a -q) && docker rmi --force $(docker images -q) && docker system prune -a --volumes",

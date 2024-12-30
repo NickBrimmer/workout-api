@@ -10,9 +10,8 @@ COPY --chown=apiUser:apiGroup . .
 COPY --chown=apiUser:node package*.json ./
 RUN npm config set prefix /home/apiUser/.npm-global
 
-
 RUN rm -rf node_modules
 RUN npm install
 
 EXPOSE 5000
-CMD ["npx", "nodemon", "./server/server.js"]
+CMD ["npx", "nodemon"]

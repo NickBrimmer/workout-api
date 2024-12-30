@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.get("/status", (_req, res) => {
   res.status(200).json({
     status: "OK",
-    message: "Service is running your face!!! hello, nick, i see you",
+    message: "Service is running your face!!!",
   });
 });
 
