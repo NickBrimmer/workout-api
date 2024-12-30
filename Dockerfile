@@ -1,6 +1,5 @@
 FROM node:20-alpine
 
-# add local user for security
 RUN addgroup -S apiGroup \
   && adduser -S -G apiGroup apiUser
 RUN mkdir -p /home/apiUser/.npm-global
