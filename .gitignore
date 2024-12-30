@@ -1,0 +1,41 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+.log
+
+# Environment variables
+.env
+*.env
+.env.test
+.env.development
+.env.production
+deployment.env
+
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Database dumps or sensitive files
+*.dump
+*.bak
+*.csv
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+.nyc_output/
