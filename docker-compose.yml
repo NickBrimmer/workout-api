@@ -4,6 +4,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
+      # mapping local /server to the container server
+      # source:/destination/place
       - ./server:/home/apiUser/app/server
     environment:
       - PORT=3000

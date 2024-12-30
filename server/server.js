@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+// import { message } from "./message.js";
 
 dotenv.config();
 
@@ -10,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.get("/status", (_req, res) => {
   res.status(200).json({
     status: "OK",
-    message: "Service is running your face!!!",
+    message: "This API is working you fool! PS, your face.",
   });
 });
 
