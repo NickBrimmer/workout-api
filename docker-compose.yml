@@ -1,0 +1,23 @@
+services:
+  server:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server:/app/src/app
+    environment:
+      - PORT=3000
+    env_file:
+      - path: ./.env
+        required: false
+    command: nodemon src/app.js
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - server
