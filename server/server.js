@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.get("/status", (_req, res) => {
   res.status(200).json({
     status: "OK",
-    message: "This API is working you fool! PS, your face.",
+    message: "This API is working you fool! PS, your face. Yeah yeah.",
   });
 });
 

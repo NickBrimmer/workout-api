@@ -10,3 +10,4 @@ This API is designed to operate on Mongo/Mongoose, Express and Docker.
 
 - docker compose up --build | tee logs.txt
 - npx nodemon --watch server/\*_/_.ts --ext ts --ignore dist/\* --exec "tsc && node dist/server.js"
+- tree -L 2 -I node_modules
