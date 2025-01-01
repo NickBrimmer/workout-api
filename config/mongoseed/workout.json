@@ -1,0 +1,28 @@
+[
+  {
+    "user": "test-user-1",
+    "avg-heart-rate": 150,
+    "body-region": "arms",
+    "body-factors": "6 hrs of sleep",
+    "calories-expended": "200",
+    "date": "2024-10-21",
+    "difficulty": "beginner",
+    "distance-mi": 0,
+    "duration-ms": 45000,
+    "equipment": "dumbbell",
+    "pre-workout-macros": { "protein": "15g", "carbs": "30g", "fats": "5g" },
+    "location": "planet fitness",
+    "notes": "",
+    "ptm-sleep-apnea": 12,
+    "reps": 2,
+    "rest-time": 2500,
+    "target-muscle": "",
+    "time-of-day": "evening",
+    "tracking-label": "exercise",
+    "workout-id": "AoLwu9zBMr",
+    "workout-name": "exercise-Bicep-Curl",
+    "workout-type": "weight training",
+    "workout-weight": "50",
+    "workout-variation": ["preacher curl", "seated isolation curl"]
+  }
+]
