@@ -9,6 +9,9 @@ services:
       - ./server:/home/apiUser/app/server
     environment:
       - PORT=3000
+    links:
+      - mongodb
+      - mongoseed
     env_file:
       - path: ./.env
         required: false
@@ -22,3 +25,15 @@ services:
       - ./server:/home/apiUser/app/server
     depends_on:
       - server
+
+  mongodb:
+    image: mongo:8
+    command: mongod
+    ports:
+      - "27017:27017"
+
+  mongoseed:
+    build: ./config/mongoseed
+    depends_on:
+      mongodb:
+        condition: service_started
