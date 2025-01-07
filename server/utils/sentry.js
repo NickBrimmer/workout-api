@@ -1,7 +1,10 @@
 import * as Sentry from "@sentry/node";
 import { nodeProfilingIntegration } from "@sentry/profiling-node";
+import { v4 as uuidv4 } from "uuid";
 
 import config from "config";
+
+const correlationId = uuidv4();
 
 let sentryDSN = "";
 if (config.has("Sentry.DSN")) {
@@ -22,5 +25,7 @@ Sentry.init({
   environment,
   attachStacktrace: true,
 });
+
+Sentry.setUser({ ip_address: "{{auto}}" });
 
 export default Sentry;
