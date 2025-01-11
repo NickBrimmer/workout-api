@@ -4,8 +4,7 @@ import mongoose from "mongoose";
 import helmet from "helmet";
 import { v4 as uuidv4 } from "uuid";
 
-import router from "./routes/index.js";
-import Workout from "./models/workouts.js";
+import workoutsRouter from "./routes/index.js";
 
 const host = process.env.MONGO_HOST || "localhost";
 const port = process.env.MONGO_PORT || "27017";
@@ -33,7 +32,7 @@ app.use("/status", (_req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/workouts", router);
+app.use("/workouts", workoutsRouter);
 
 mongoose.Promise = Promise;
 

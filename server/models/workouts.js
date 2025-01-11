@@ -28,16 +28,12 @@ const workoutSchema = new Schema({
 });
 
 workoutSchema.statics = {
-  list(request, response) {
-    const { query, fields, skip, limit } = request;
-    console.log("in the list function", request);
-
+  list({ query, fields, skip, limit }) {
     return this.find(query, fields)
       .skip(skip)
       .limit(limit) // add .sort() in the future.
       .exec()
       .then((workouts) => {
-        console.log("after .exec() and returning Promise");
         if (workouts.length === 0) {
           throw new Error("No workouts matching your query.");
         }

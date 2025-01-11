@@ -1,10 +1,10 @@
 import express from "express";
 import Workout from "../models/workouts.js";
 
-const router = express.Router();
+const workoutsRouter = express.Router();
 
 // GET all workouts
-router.get("/", async (req, res) => {
+workoutsRouter.get("/", async (req, res) => {
   try {
     const workouts = await Workout.list({
       query: {},
@@ -16,4 +16,4 @@ router.get("/", async (req, res) => {
   }
 });
 
-export default router;
+export default workoutsRouter;
