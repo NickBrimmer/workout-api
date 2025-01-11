@@ -16,6 +16,7 @@
     "@sentry/profiling-node": "^8.48.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "helmet": "^8.0.0",
     "mongoose": "^8.9.3",
     "uuid": "^11.0.3"
   },
