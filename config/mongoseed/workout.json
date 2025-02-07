@@ -23,7 +23,7 @@
     "workout-name": "exercise-Bicep-Curl",
     "workout-type": "weight training",
     "workout-weight": "50",
-    "workout-variation": ["preacher curl", "seated isolation curl"]
+    "workout-variations": ["preacher curl", "seated isolation curl"]
   },
   {
     "user": "test-user-1",
@@ -49,7 +49,7 @@
     "workout-name": "barbell-squat",
     "workout-type": "weight training",
     "workout-weight": "150",
-    "workout-variation": ["preacher curl", "seated isolation curl"]
+    "workout-variations": ["preacher curl", "seated isolation curl"]
   },
   {
     "user": "test-user-1",
@@ -75,7 +75,7 @@
     "workout-name": "dumbbell-lateral-raises",
     "workout-type": "weight training",
     "workout-weight": "25",
-    "workout-variation": ["preacher curl", "seated isolation curl"]
+    "workout-variations": ["preacher curl", "seated isolation curl"]
   },
   {
     "user": "test-user-1",
@@ -101,7 +101,7 @@
     "workout-name": "calf-raises",
     "workout-type": "weight training",
     "workout-weight": "150",
-    "workout-variation": ["preacher curl", "seated isolation curl"]
+    "workout-variations": ["preacher curl", "seated isolation curl"]
   },
   {
     "user": "test-user-1",
@@ -127,7 +127,7 @@
     "workout-name": "power-clean",
     "workout-type": "olympic",
     "workout-weight": "225",
-    "workout-variation": ["clean and jerk"]
+    "workout-variations": ["clean and jerk"]
   },
   {
     "user": "test-user-1",
@@ -153,6 +153,6 @@
     "workout-name": "running",
     "workout-type": "cardio",
     "workout-weight": "225",
-    "workout-variation": ["jogging", "walking"]
+    "workout-variations": ["jogging", "walking"]
   }
 ]

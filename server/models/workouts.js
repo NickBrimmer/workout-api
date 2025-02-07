@@ -11,7 +11,7 @@ const workoutSchema = new Schema({
   difficulty: String,
   distanceMi: Number,
   durationMs: Number,
-  equipment: [String],
+  equipment: Array,
   preWorkoutMacros: Object,
   location: String,
   notes: String,
@@ -24,7 +24,7 @@ const workoutSchema = new Schema({
   workoutName: String,
   workoutType: String,
   workoutWeight: Number,
-  workoutVariations: [String],
+  workoutVariations: Array,
 });
 
 workoutSchema.statics = {
