@@ -12,9 +12,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@sentry/node": "^8.48.0",
+    "@sentry/profiling-node": "^8.48.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.9.2"
+    "helmet": "^8.0.0",
+    "mongoose": "^8.9.3",
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
