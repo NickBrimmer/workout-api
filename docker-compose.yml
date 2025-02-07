@@ -16,15 +16,15 @@ services:
       - path: ./.env
         required: false
 
-  nginx:
-    image: nginx:latest
-    container_name: nginx
-    ports:
-      - "8080:80"
-    volumes:
-      - ./server:/home/apiUser/app/server
-    depends_on:
-      - server
+  # nginx:
+  #   image: nginx:latest
+  #   container_name: nginx
+  #   ports:
+  #     - "8080:80"
+  #   volumes:
+  #     - ./server:/home/apiUser/app/server
+  #   depends_on:
+  #     - server
 
   mongodb:
     image: mongo:8
