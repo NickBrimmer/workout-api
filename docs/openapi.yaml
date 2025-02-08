@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: Workout API
+  description: An API to store all your workout data so you can track your progress in detail.
+  version: 1.0.0
+
+servers:
+  - url: http://workoutapi.example.com/v1
+    description: Main Production + Client Server
+  # - url: http://test.workoutapi.example.com/v1
+  #   description: Internal Test Server
+
+paths:
+  /status:
+    get:
+      summary: Check Status Health of API
+      responses:
+        "200":
+          description: return a status code if the API is up and running.
+  /workouts:
+    get:
+      summary: Returns a list of all workouts.
+      # description: Optional extended description in CommonMark or HTML.
+      responses:
+        "200":
+          description: A JSON array of recorded workout objects
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
